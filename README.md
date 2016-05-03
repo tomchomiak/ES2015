@@ -22,3 +22,23 @@ function testFunc (){
 }
 
 ```
+
+```javascript
+function testFunc (){	
+
+	var x = false;
+
+	if (x){
+		let xIsTrue = true;
+	}else{
+		let xIsFalse = true;
+	}
+
+	/*
+	 * Will get refernce error
+	 * Reference Error: xIsTrue is not defined
+	 */
+	console.log(xIsTrue)
+}
+
+```
