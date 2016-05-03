@@ -52,19 +52,23 @@ function testFunc (){
 
 ```
 
-using let in *for* loops
+Use var in *for* loops will cause some unexpected behaviour because of hoisting
 
 ```javascript
 
 function sayHi (names){
 	for (var i in names){
-		console.log('Hi', names[i])
+
+	  someFunc(function(){
+	  	// Console log within callback function
+	  	console.log('Hi', names[i])
+	  })
 	}
 }
 
 ```
 
-Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will print out 
+Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will print out the following within the callback function. 
 
 ```bash
 	> Hi Audrey
@@ -72,7 +76,29 @@ Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will print out
 	> Hi Audrey
 ```
 
+Use *let* in for loops to prevent hoisting
 
+```javascript
+
+function sayHi (names){
+	for (let i in names){
+
+	  someFunc(function(){
+	  	// Console log within callback function
+	  	console.log('Hi', names[i])
+	  })
+	}
+}
+
+```
+
+Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will now print out the following within the callback function as a new instance of i will be created in each iteration of the loop. 
+
+```bash
+	> Hi Tom
+	> Hi Gaby
+	> Hi Audrey
+```
 
 
 ### Const
