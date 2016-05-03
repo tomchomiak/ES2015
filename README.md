@@ -50,7 +50,7 @@ function testFunc (){
 	}
 
 	/*
-	 * Will get refernce error
+	 * Will return refernce error
 	 * Reference Error: xIsFalse is not defined
 	 */
 	console.log(xIsFalse)
@@ -158,9 +158,15 @@ function someFunc (tries){
 
 	if (tries > MAX_TRIES){
 
-		const LOCKOUT_TIME = 600000;
+		const LOCKOUT_TIME = 600000; // not visible outside of if block
 		lockUser(LOCKOUT_TIME);
 	}
+
+	/*
+	 * Will return refernce error
+	 * Reference Error: LOCKOUT_TIME is not defined
+	 */
+	console.log(LOCKOUT_TIME)
 
 }
 ```
