@@ -6,7 +6,7 @@
 ```javascript
 function testFunc (){	
 
-	var x = false;
+	var x = true;
 
 	if (x){
 		var xIsTrue = true;
@@ -18,7 +18,7 @@ function testFunc (){
 	 * Returns undefined rather than crashing program
 	 * This happens b/c vars are hoisted to top of func
 	 */
-	console.log(xIsTrue)
+	console.log(xIsFalse)
 }
 
 ```
@@ -26,7 +26,7 @@ function testFunc (){
 ```javascript
 function testFunc (){	
 
-	var x = false;
+	var x = true;
 
 	if (x){
 		let xIsTrue = true;
@@ -36,9 +36,9 @@ function testFunc (){
 
 	/*
 	 * Will get refernce error
-	 * Reference Error: xIsTrue is not defined
+	 * Reference Error: xIsFalse is not defined
 	 */
-	console.log(xIsTrue)
+	console.log(xIsFalse)
 }
 
 ```
