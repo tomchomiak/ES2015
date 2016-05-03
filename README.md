@@ -256,3 +256,9 @@ doSomething("Something cool", {
 })
 ```
 
+What if omit options object in function call? A type error 
+
+```javascript
+doSomething("Something cool")
+```
+
