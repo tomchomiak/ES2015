@@ -58,7 +58,7 @@ function testFunc (){
 
 ```
 
-Use var in *for* loops may also cause some unexpected behaviour because of hoisting. Especially, if you have any callbacks within the for loop.
+Using var in *for* loops may also cause some unexpected behaviour because of hoisting. Especially, if you have callbacks within the for loop.
 
 ```javascript
 
