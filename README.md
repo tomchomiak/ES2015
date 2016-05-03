@@ -72,7 +72,7 @@ let x = 1;
 let x = 2;
 ```
 
-the above will result in type error
+the above will result in a type error
 
 ```bash
 > TypeError: Identifier 'x' has already been declared
