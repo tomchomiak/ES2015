@@ -166,7 +166,7 @@ function someFunc (tries){
 	 * Will return refernce error
 	 * Reference Error: LOCKOUT_TIME is not defined
 	 */
-	console.log(LOCKOUT_TIME)
+	console.log(LOCKOUT_TIME);
 
 }
 ```
