@@ -65,7 +65,7 @@ Using var in *for* loops may also cause some unexpected behaviour because of hoi
 function sayHi (names){
 	for (var i in names){
 
-	  someFunc(function(){
+	  someFunc('do something', function(){
 	  	// Console log within callback function
 	  	console.log('Hi', names[i])
 	  })
