@@ -4,7 +4,7 @@
   - [Let](#let)
   - [Const](#const)
 2. Functions
-  - [Function Defaults](#function-defaults)
+  - [Default Parameters](#default-parameters)
   - [Rest Params](#rest-params)
   - [Spread Operator](#spread-operator)
   - [Arrow Functions](#arrow-functions)
@@ -171,7 +171,7 @@ function someFunc (tries){
 }
 ```
 
-### Function Defaults
+### Default Parameters
 
 Take the following function
 
