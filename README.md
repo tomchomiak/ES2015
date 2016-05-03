@@ -128,3 +128,24 @@ Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will now print out the following wi
 
 
 ### Const
+
+`const` keyword creates *read-only* named constants. 
+
+```javascript
+const MAX_TRIES = 5;
+```
+
+Constants cannot be reassigned. The following will not work and *MAX_TRIES* will stay equal to 5.
+
+```javascript
+const MAX_TRIES = 5;
+MAX_TRIES = 10;
+```
+
+Constants also cannot be initialized without an initial value. The following will not work.
+
+```javascript
+const MAX_TRIES;
+MAX_TRIES = 5;
+``` 
+
