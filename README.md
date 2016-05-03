@@ -82,6 +82,26 @@ Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will print out the following within
 	> Hi Audrey
 ```
 
+let variables can be reassigned
+
+```javascript
+let x = 1;
+x = 2;
+```
+
+but they cannot be redeclared
+
+```javascript
+let x = 1;
+let x = 2;
+```
+
+the above will result in type error
+
+```bash
+> TypeError: Identifier 'x' has already been declared
+```
+
 Use *let* in for loops to prevent hoisting
 
 ```javascript
