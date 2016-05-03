@@ -15,6 +15,9 @@
 ```javascript
 function testFunc (){	
 
+	// Variables that get hoisted
+	// var x, xIsTrue, xIsFalse;
+
 	var x = true;
 
 	if (x){
