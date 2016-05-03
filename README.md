@@ -5,11 +5,12 @@
   - [Const](#const)
 2. Functions
   - [Default Parameters](#default-parameters)
+  - [Options Object](#options-object)
   - [Rest Params](#rest-params)
   - [Spread Operator](#spread-operator)
   - [Arrow Functions](#arrow-functions)
 
-### Let
+## Let
 `Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`.
 
 ```javascript
@@ -127,7 +128,7 @@ Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will now print out the following wi
 ```
 
 
-### Const
+## Const
 
 `const` keyword creates *read-only* named constants. 
 
@@ -171,7 +172,7 @@ function someFunc (tries){
 }
 ```
 
-### Default Parameters
+## Default Parameters
 
 Take the following function
 
@@ -217,4 +218,6 @@ now
 ```javascript
 showUsers();
 ```
-will return 0, instead of a type error.
+will return 0 instead of a type error.
+
+## Options Object
