@@ -5,7 +5,7 @@
   - [Const](#const)
 2. Functions
   - [Default Parameters](#default-parameters)
-  - [Options Object](#options-object)
+  - [Options Object and Named Parameters](#options-object-and-named-parameters)
   - [Rest Params](#rest-params)
   - [Spread Operator](#spread-operator)
   - [Arrow Functions](#arrow-functions)
@@ -172,7 +172,7 @@ function someFunc (tries){
 }
 ```
 
-## Default Parameters
+## Default Parameters 
 
 Take the following function
 
@@ -220,4 +220,20 @@ showUsers();
 ```
 will return 0 instead of a type error.
 
-## Options Object
+## Options Object and Named Parameters
+
+The options object is a widely used pattern that allows user-defined settings to be passed to a function in the form of properties on an object.
+
+```javascript
+function doSomething(action, options = {}){
+	
+	let visible = options.visible;
+	let expires = options.expires;
+}
+
+doSomething("Something cool", {
+	visible: true,
+	expires: 50000
+})
+```
+
