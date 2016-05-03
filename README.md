@@ -149,3 +149,18 @@ const MAX_TRIES;
 MAX_TRIES = 5;
 ``` 
 
+Similar to let, constants are block scoped
+
+```javascript
+function someFunc (tries){
+	
+	const MAX_TRIES = 5;
+
+	if (tries > MAX_TRIES){
+
+		const LOCKOUT_TIME = 600000;
+		lockUser(LOCKOUT_TIME);
+	}
+
+}
+```
