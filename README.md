@@ -94,7 +94,7 @@ function sayHi (names){
 
 ```
 
-Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will print out the following within the callback function. 
+Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` within the callback will print out the following 
 
 ```bash
 	> Hi Audrey
