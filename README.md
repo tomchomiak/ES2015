@@ -38,8 +38,8 @@ function testFunc (){
 ```javascript
 function testFunc (){	
 
-  // Variables that get hoisted
-  // var x;
+	// Variables that get hoisted
+	// var x;
 
 	var x = true;
 
