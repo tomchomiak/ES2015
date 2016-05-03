@@ -89,7 +89,7 @@ Use *let* in for loops to prevent hoisting
 function sayHi (names){
 	for (let i in names){
 
-	  someFunc(function(){
+	  someFunc('do something', function(){
 	  	// Console log within callback function
 	  	console.log('Hi', names[i])
 	  })
