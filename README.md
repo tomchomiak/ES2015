@@ -28,7 +28,7 @@ function testFunc (){
 
 	/*
 	 * Returns undefined rather than a reference error, meaning the variable exists
-	 * This happens b/c vars are hoisted to top of func
+	 * This happens b/c vars are hoisted to top of the function
 	 */
 	console.log(xIsFalse)
 }
