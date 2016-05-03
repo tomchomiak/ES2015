@@ -190,7 +190,9 @@ showUsers(['Tom', 'Gaby', 'Audrey']);
 The following would return a type error
 ```javascript
 showUsers();
-// TypeError: Cannot read property 'length' of undefined
+```
+```bash
+> TypeError: Cannot read property 'length' of undefined
 ```
 
 You can not always assume that userNames will always be assigned a value. So, historically, a common practice is to check for the presence of arguments as the very first thing in the function. 
