@@ -229,6 +229,25 @@ function doSomething(action, options = {}){
 	
 	let visible = options.visible;
 	let expires = options.expires;
+
+	console.log("visible", visible);
+	console.log("expires", expires);
+}
+
+doSomething("Something cool", {
+	visible: true,
+	expires: 50000
+})
+```
+
+The problem with the above example is that it is not clear what options the function can take. Named parameters for optional settings make it easier to understand how a function should be invoked.
+
+```javascript
+function doSomething(action, {visible, expires}){
+	
+	console.log("visible", visible);
+	console.log("expires", expires);
+
 }
 
 doSomething("Something cool", {
