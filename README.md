@@ -52,6 +52,27 @@ function testFunc (){
 
 ```
 
-using let in for loops
+using let in *for* loops
+
+```javascript
+
+function sayHi (names){
+	for (var i in names){
+		console.log('Hi', names[i])
+	}
+}
+
+```
+
+Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will print out 
+
+```bash
+	> Hi Audrey
+	> Hi Audrey
+	> Hi Audrey
+```
+
+
+
 
 ### Const
