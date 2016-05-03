@@ -1,5 +1,14 @@
 # ES2015 cheatsheet
 
+1. Declarations
+  - [Let](#let)
+  - [Const](#const)
+2. Functions
+  - [Function Defaults](#function-defaults)
+  - [Rest Params](#rest-params)
+  - [Spread Operator](#spread-operator)
+  - [Arrow Functions](#arrow-functions)
+
 ### Let
 `Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`. A block is any code section with curly braces (i.e. if, else, for, while, etc.)
 
@@ -42,3 +51,7 @@ function testFunc (){
 }
 
 ```
+
+using let in for loops
+
+### Const
