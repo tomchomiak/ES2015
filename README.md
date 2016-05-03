@@ -170,3 +170,35 @@ function someFunc (tries){
 
 }
 ```
+
+### Function Defaults
+
+Take the following function
+
+```javascript
+function showUsers(userNames){
+	let numUsers = userNames.length;
+	console.log(numUsers);
+}
+```
+
+Below would return 3
+```javascript
+showUsers(['Tom', 'Gaby', 'Audrey']);
+```
+
+The following would return a type error
+```javascript
+showUsers();
+// TypeError: Cannot read property 'length' of undefined
+```
+
+You can not always assume that userNames will always be assigned a value. So, historically, a common practice is to check for the presence of arguments as the very first thing in the function. 
+
+```javascript
+function showUsers(userNames){
+	let users = !userNames ? [] : userNames;
+	let numUsers = users.length;
+	console.log(numUsers);
+}
+```
