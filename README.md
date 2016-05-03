@@ -10,7 +10,7 @@
   - [Arrow Functions](#arrow-functions)
 
 ### Let
-`Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`. A block is any code section with curly braces (i.e. if, else, for, while, etc.)
+`Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`.
 
 ```javascript
 function testFunc (){	
@@ -52,7 +52,7 @@ function testFunc (){
 
 ```
 
-Use var in *for* loops will cause some unexpected behaviour because of hoisting
+Use var in *for* loops may also cause some unexpected behaviour because of hoisting. Especially, if you have any callbacks within the for loop.
 
 ```javascript
 
