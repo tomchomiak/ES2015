@@ -354,6 +354,7 @@ function GreetComponent(target, urlPath){
 	this.urlPath = urlPath;
 }
 
+// Instance Method on GreetComponent
 GreetComponent.protoype.render = function(){
 	
 	let url = this.urlPath;
@@ -372,6 +373,7 @@ GreetComponent.protoype.render = function(){
 
 }
 
+// New object declartion
 let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
 tagComponent.render();
 ```
