@@ -294,7 +294,7 @@ would return
 ```
 
 ## Spread Operator
-You can also use the dot notation to split an array into Individual Arguments
+You can also use dot notation to split an array into individual arguments
 
 ```javascript
 
