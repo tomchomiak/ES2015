@@ -265,17 +265,33 @@ doSomething("Something cool")
 
 ## Rest Parameters 
 
-The new rest parameter syntax allows us to represent an indefinite number of aruguments as an explicit Array argument. The 3 dots infront of the parameter `name` are part of the new syntax and will make all `name` arguments passed into this function into an Array.
+The new rest parameter syntax allows us to represent an indefinite number of aruguments as an explicit Array argument. The 3 dots infront of the parameter `names` are part of the new syntax and will push add all `names` arguments passed into this function into an Array.
 
 ```javascript
 function sayHi(x, y, z, ...names){
 
 	console.log(x);
-	
+
 	for (let i in names){
 		console.log("Hi ", names[i])
 	}
 }
 ```
+
+Rest Paremeters must always be the last parameter in a function signature. This is because all arguments passed into the function (after the other regular paremeters) will be pushed into the Rest parameter array.
+
+As an example, executing the following 
+```javascript
+sayHi("Saying hi", "Gaby", "Audrey", "Tom");
+```
+
+would return
+```bash
+> Saying hi
+> Hi Gaby
+> Hi Audrey
+> Hi Tom
+```
+
 
 
