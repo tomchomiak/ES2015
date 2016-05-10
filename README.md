@@ -396,7 +396,7 @@ to an arrow function like so
 }
 ```
 
-changing the GreetComponent's Annonymous function to an arrow function would fix the issue we were seeing and `this.targetElement` would be available to the arrow function
+changing the GreetComponent's Annonymous function to an arrow function would fix the issue we were seeing and `this.targetElement` would now be refering to the `this.targetElement` defined within the constructor function making it available for use within the arrow function
 
 ```javascript
 // Constructor Function
