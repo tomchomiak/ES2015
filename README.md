@@ -1,5 +1,7 @@
 # ES2015 cheatsheet
 
+A ES2015 cheatsheet for the rest of us
+
 1. Declarations
   - [Let](#let)
   - [Const](#const)
