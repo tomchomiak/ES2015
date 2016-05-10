@@ -218,7 +218,7 @@ now
 ```javascript
 showUsers();
 ```
-will return 0 instead of a type error.
+will return 0 instead of a type error as userNames will default to an empty array if it is not passed.
 
 ## Options Object and Named Parameters
 
