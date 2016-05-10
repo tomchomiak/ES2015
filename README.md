@@ -303,7 +303,7 @@ sayHi("Saying hi", ...names); // becomes sayHi("Saying hi", "Gaby", "Audrey", "T
 
 ```
 
-The syntax for Rest parameters and Spread operators looks the same. However, `Rest parameters` are used in function definitions of variatic functions and push arguments into an array. Wheras, the `spread' operator is used in function invocations and spreads an array into multiple arguments within the function call. 
+The syntax for Rest Parameters and Spread Operators looks the same. However, `Rest Parameters` are used in function definitions of variatic functions and push arguments into an array. Whereas, the `Spread Operator` is used in function invocations and spreads an array into multiple arguments within the function call. 
 
 Same syntax, but different behaviour depending on wher the dot notation is used.
 
