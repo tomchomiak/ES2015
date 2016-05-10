@@ -6,7 +6,7 @@
 2. Functions
   - [Default Parameters](#default-parameters)
   - [Options Object and Named Parameters](#options-object-and-named-parameters)
-  - [Rest Params](#rest-params)
+  - [Rest Parameters](#rest-parameters)
   - [Spread Operator](#spread-operator)
   - [Arrow Functions](#arrow-functions)
 
@@ -261,4 +261,18 @@ What if omit options object in function call? A type error
 ```javascript
 doSomething("Something cool")
 ```
+
+
+## Rest Parameters 
+
+The new rest parameter syntax allows us to represent an indefinite number of aruguments as an explicit Array argument. The 3 dots infront of the parameter `name` are part of the new syntax and will make all `name` arguments passed into this function into an Array.
+
+```javascript
+function sayHi(...names){
+	for (let i in names){
+		console.log("Hi ", names[i])
+	}
+}
+```
+
 
