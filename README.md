@@ -313,7 +313,7 @@ Same syntax, but different behaviour depending on wher the dot notation is used.
 
 Arrow functions can be used to preserve scope. Arrow functions have a lexical binding which means that they bind to the scope of where they are defined and not where they run.
 
-Lets see an example of its use by creating an Object. 
+Lets see an example of its use by creating an Object. Objects help us with encapsulation, organization, and testability of our code.
 
 We start by creating a constructor function that takes in parameters and assignes them to instance properties
 
@@ -324,7 +324,7 @@ function GreetComponent(target, urlPath){
 	this.urlPath = urlPath;
 }
 ```
-We can then add instance methods using the function protype. In the below example, we will add an instance method called render. Properties set within the constructor function can be accessed by any instance method on the Greet Component.
+We can then add instance methods using the function protype. In the below example, we will add an instance method called render. Properties set within the constructor function can be accessed by any instance method on the Greet Component. In the below example, we are reading this.urlPath that was set in the constructor function.
 
 ```javascript
 GreetComponent.protoype.render = function(){
@@ -338,8 +338,13 @@ GreetComponent.protoype.render = function(){
 }
 ```
 
+To use our new component, we create a new object like so.
 
-JavaScript objects help us with encapsulation, organization, and testability of our code.
+```javascript
+let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
+tagComponent.render();
+```
+
 
 
 
