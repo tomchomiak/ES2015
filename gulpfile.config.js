@@ -2,6 +2,9 @@ module.exports = function () {
 
 	return {
 
+		readme: [
+			'./README.md'
+		],
 		css: [
 			'./src/client/css/**/*.css'
 		],

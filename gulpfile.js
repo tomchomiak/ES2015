@@ -113,6 +113,12 @@ gulp.task('images', function (){
 })
 
 
+gulp.task('readme', ['delete-readme'], function (){
+  return gulp
+    .src(config['readme'])
+    .pipe(gulp.dest('dist/'))
+})
+
 
 /** 
  **
@@ -150,6 +156,9 @@ var startBrowserSync = function () {
   gulp.watch(config['js'], ['script']);
   gulp.watch(config['html'], ['html']);
   gulp.watch(config['images'], ['images']);
+  gulp.watch(config['readme'], ['readme']);
+
+
 }
 
 
@@ -161,6 +170,7 @@ var startBrowserSync = function () {
 gulp.task('delete-html', function (done){ del(['dist/**/*.html', '!dist/components/**/*', '!dist/static/**/*'], done)});
 gulp.task('delete-css', function (done){ del(['dist/css/**/*.css', '!dist/css/lib.js'], done)});
 gulp.task('delete-js', function (done){ del(['dist/js/**/*.js', '!dist/js/lib.js'], done)});
+gulp.task('delete-readme', function (done){ del(['dist/README.md'], done)});
 
 
 /** 
