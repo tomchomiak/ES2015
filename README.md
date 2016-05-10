@@ -329,7 +329,7 @@ We can then add instance methods using the function protype. In the below exampl
 ```javascript
 GreetComponent.protoype.render = function(){
 	
-	var url = this.urlPath;
+	let url = this.urlPath;
 
 	$.get(url, function (data){
 
@@ -345,7 +345,35 @@ let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
 tagComponent.render();
 ```
 
+There are some problems with this, however. Anonymous functions passed as callbacks to other functions create their own scope. So, the following would not work.
 
+```javascript
+// Constructor Function
+function GreetComponent(target, urlPath){
+	this.targetElement = target;
+	this.urlPath = urlPath;
+}
 
+GreetComponent.protoype.render = function(){
+	
+	let url = this.urlPath;
+
+	$.getRequest(url, function (data){
+
+		let names = data.names;
+		/*
+		 * Won't work because the scope of GreetComponent will be different 
+		 * then the scope of the annonymos function run by getRequest
+		 * this.targetElement does not exist and will return undefined
+		 */
+		displayNames(this.targetElement, ...names)
+
+	});
+
+}
+
+let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
+tagComponent.render();
+```
 
 
