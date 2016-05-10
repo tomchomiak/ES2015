@@ -345,7 +345,7 @@ let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
 tagComponent.render();
 ```
 
-There are some problems with this, however. Anonymous functions passed as callbacks to other functions create their own scope. So, the following would not work.
+There are some problems with this, however. Anonymous functions passed as callbacks to other functions create their own scope. So, the following would not work and `this.targetElement` would return undefined.
 
 ```javascript
 // Constructor Function
@@ -378,4 +378,53 @@ let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
 tagComponent.render();
 ```
 
+Enter Arrow Functions. Arrow functions bind to the scope of where they are defined, not where they are run. This is known as lexical binding.
 
+You can convert a regular function 
+
+```javascript
+function (data){
+	
+}
+```
+
+to an arrow function like so
+
+```javascript
+(data) => {
+	
+}
+```
+
+changing the GreetComponent's Annonymous function to an arrow function would fix the issue we were seeing and `this.targetElement` would be available to the arrow function
+
+```javascript
+// Constructor Function
+function GreetComponent(target, urlPath){
+	this.targetElement = target;
+	this.urlPath = urlPath;
+}
+
+// Instance Method on GreetComponent
+GreetComponent.protoype.render = function(){
+	
+	let url = this.urlPath;
+
+	$.getRequest(url, (data)=>{
+
+		let names = data.names;
+		/*
+		 * Won't work because the scope of GreetComponent will be different 
+		 * then the scope of the annonymos function run by getRequest
+		 * this.targetElement does not exist and will return undefined
+		 */
+		displayNames(this.targetElement, ...names)
+
+	});
+
+}
+
+// New object declartion
+let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
+tagComponent.render();
+```
