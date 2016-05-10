@@ -292,6 +292,8 @@ would return
 > Hi Audrey
 > Hi Tom
 ```
+
+## Spread Operator
 You can also use the dot notation to split an array into Individual Arguments
 
 ```javascript
@@ -300,6 +302,10 @@ var names = ["Gaby", "Audrey", "Tom"];
 sayHi("Saying hi", ...names); // becomes sayHi("Saying hi", "Gaby", "Audrey", "Tom")
 
 ```
+
+The syntax for Rest parameters and Spread operators looks the same. However, `Rest parameters` are used in function definitions of variatic functions and push arguments into an array. Wheras, the `spread' operator is used in function invocations and spreads an array into multiple arguments within the function call. 
+
+Same syntax, but different behaviour depending on wher the dot notation is used.
 
 
 
