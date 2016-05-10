@@ -1,0 +1,26 @@
+{
+  "name": "ES2015",
+  "description": "ES2015 cheatsheet",
+  "main": "index.js",
+  "authors": [
+    "Tom Chomiak <tom.chomiak@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ES2015"
+  ],
+  "homepage": "https://github.com/tomchomiak/ES2015",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3"
+  }
+}
