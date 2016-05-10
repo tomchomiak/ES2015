@@ -307,6 +307,10 @@ The syntax for Rest Parameters and Spread Operators looks the same. However, `Re
 
 Same syntax, but different behaviour depending on wher the dot notation is used.
 
+## Arrow Functions
+
+Arrow functions can be used to preserve scope. Arrow functions have a lexical binding which means that they bind to the scope of where they are defined and not where they run.
+
 
 
 
