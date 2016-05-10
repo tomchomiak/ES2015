@@ -12,6 +12,8 @@ A ES2015 cheatsheet for the rest of us
   - [Spread Operator](#spread-operator)
   - [Arrow Functions](#arrow-functions)
 
+3. Objects and Strings
+  - [Object Initializer](#object-initializer-shorthand)
 ## Let
 `Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`.
 
@@ -427,4 +429,32 @@ GreetComponent.protoype.render = function(){
 // New object declartion
 let firstGreetComponent = new GreetComponent(targetDiv, "/api/names");
 tagComponent.render();
+```
+
+## Object Initializer Shorthand
+This 
+
+```javascript
+function assembleFullname (first, last){
+	let fullname = first + last;
+
+	return {
+		first: first,
+		last: last,
+		fullname: fullname
+	}
+}
+```
+can now be shortened to 
+
+```javascript
+function assembleFullname (first, last){
+	let fullname = first + last;
+
+	return {
+		first, 
+		last, 
+		fullname
+	}
+}
 ```
