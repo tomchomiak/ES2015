@@ -292,6 +292,15 @@ would return
 > Hi Audrey
 > Hi Tom
 ```
+You can also use the dot notation to split an array into Individual Arguments
+
+```javascript
+
+var names = ["Gaby", "Audrey", "Tom"];
+sayHi("Saying hi", ...names); // becomes sayHi("Saying hi", "Gaby", "Audrey", "Tom")
+
+```
+
 
 
 
