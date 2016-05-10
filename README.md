@@ -432,7 +432,9 @@ tagComponent.render();
 ```
 
 ## Object Initializer Shorthand
-This 
+With object initializers, we can remove duplicate variable names from object properties when those properties have the same name as the variables being assigned to them. 
+
+In otherwords, this 
 
 ```javascript
 function assembleFullname (first, last){
@@ -445,7 +447,7 @@ function assembleFullname (first, last){
 	}
 }
 ```
-can now be shortened to 
+can now be shortened to the following. 
 
 ```javascript
 function assembleFullname (first, last){
@@ -458,3 +460,4 @@ function assembleFullname (first, last){
 	}
 }
 ```
+This only works when properties and values have the same name
