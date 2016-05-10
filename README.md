@@ -265,7 +265,7 @@ doSomething("Something cool")
 
 ## Rest Parameters 
 
-The new rest parameter syntax allows us to represent an indefinite number of aruguments as an explicit Array argument. The 3 dots infront of the `names` parameter are part of the new syntax and will push add all `names` arguments passed into this function into an Array.
+The new rest parameter syntax allows us to represent an indefinite number of aruguments as an explicit Array argument. The 3 dots infront of the `names` parameter are part of the new syntax and will push all `names` arguments passed into this function into an Array.
 
 ```javascript
 function sayHi(x, y, z, ...names){
