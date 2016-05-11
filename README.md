@@ -17,6 +17,7 @@ A ES2015 cheatsheet for the rest of us
 3. Objects and Strings
   - [Object Initializer](#object-initializer-shorthand)
   - [Object Destructuring](#object-destructuring)
+  - [Object Method Initialzer](#object-method-initializer)
 
 
 ## Let
@@ -523,3 +524,7 @@ let {fullname} = assembleFullname("Tom", "Chomiak");
 
 console.log(fullname); // Returns Tom Chomiak
 ```
+
+## object-method-initializer
+[&#9757; Back to top](#table-of-contents)
+
