@@ -18,6 +18,7 @@ A ES2015 cheatsheet for the rest of us
   - [Object Initializer](#object-initializer-shorthand)
   - [Object Destructuring](#object-destructuring)
   - [Object Method Initialzer](#object-method-initializer)
+  - [Template Strings](#template-strings)
 
 
 ## Let
@@ -550,3 +551,5 @@ return {
 	}
 }
 ```
+
+## Template Strings
