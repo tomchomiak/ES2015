@@ -460,4 +460,18 @@ function assembleFullname (first, last){
 	}
 }
 ```
-This only works when properties and values have the same name
+This only works when properties and values have the same name. 
+
+We can assign objects like this anywhere and not just in function returns.
+
+```javascript
+let name = "Tom";
+let age = 31;
+let gender = "male";
+
+let user = {name, age, gender};
+
+console.log(user.name); // returns Tom
+console.log(user.age); // returns 31
+console.log(user.gender) // returns male
+```
