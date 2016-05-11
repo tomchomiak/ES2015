@@ -14,6 +14,7 @@ A ES2015 cheatsheet for the rest of us
 
 3. Objects and Strings
   - [Object Initializer](#object-initializer-shorthand)
+  - [Object Destructuring](#object-destructuring)
 ## Let
 `Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`.
 
@@ -473,4 +474,10 @@ let user = {name, age, gender};
 console.log(user.name); // returns Tom
 console.log(user.age); // returns 31
 console.log(user.gender); // returns male
+```
+
+## Object Destructuring
+
+```javascript
+
 ```
