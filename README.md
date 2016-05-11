@@ -515,3 +515,6 @@ console.log(fullname); // Returns Tom Chomiak
 ```
 
 The object properties are assigned to local variables that must have the same name as the object properties
+
+Not all properties have to be destructured at the same time. We can explicitly select the ones we want.
+
