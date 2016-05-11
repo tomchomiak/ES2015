@@ -584,4 +584,6 @@ function assembleFullname (first, last){
 		fullname
 	}
 }
+
+Any JavaScript that needs to be evaluated in the template string is wrapped in a dollar sign and curly braces
 ```
