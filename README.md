@@ -18,7 +18,7 @@ A ES2015 cheatsheet for the rest of us
   - [Object Initializer](#object-initializer-shorthand)
   - [Object Destructuring](#object-destructuring)
   - [Object Method Initialzer](#object-method-initializer)
-  
+
 4. Strings
   - [Template Strings](#template-strings)
   - [Multi-line Strings](#multi-line-strings)
@@ -591,3 +591,5 @@ function assembleFullname (first, last){
 Any JavaScript that needs to be evaluated in the template string is wrapped in a dollar sign and curly braces
 ```
 ## Multi-line Strings
+[&#9757; Back to top](#table-of-contents)
+
