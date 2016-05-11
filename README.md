@@ -553,3 +553,5 @@ return {
 ```
 
 ## Template Strings
+[&#9757; Back to top](#table-of-contents)
+
