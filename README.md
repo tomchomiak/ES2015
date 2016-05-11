@@ -595,3 +595,24 @@ Any JavaScript that needs to be evaluated in the template string is wrapped in a
 
 Template strings offer a new and better way to write multi-line strings
 
+```javascript
+
+let username = "Tom";
+let admin = "Gaby";
+
+let longString = `
+
+Hi ${username},
+
+How are you doing?
+
+This is some long text.
+
+Best,
+
+${admin}
+`
+
+```
+
+In the example above, new line characters are preserved.
