@@ -16,7 +16,7 @@ A ES2015 cheatsheet for the rest of us
   - [Object Initializer](#object-initializer-shorthand)
   - [Object Destructuring](#object-destructuring)
 
-  
+
 ## Let
 `Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`.
 
@@ -478,7 +478,7 @@ console.log(user.age); // returns 31
 console.log(user.gender); // returns male
 ```
 
-## Object Destructuring
+## Object Destructuring — [Back to top](#ES2015-cheatsheet)
 
 We can use shorthand to assign properties returned from objects to local variables with the same name
 
