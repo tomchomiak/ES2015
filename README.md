@@ -1,7 +1,8 @@
-# &#9876;
-# ES2015 cheatsheet
+# &#9876; ES2015 cheatsheet
 
 A ES2015 cheatsheet for the rest of us
+
+### Table of contents
 
 1. Declarations
   - [Let](#let)
@@ -480,7 +481,7 @@ console.log(user.gender); // returns male
 ```
 
 ## Object Destructuring
-[&#9757; Back to top](#es2015-cheatsheet)
+[&#9757; Back to top](#table-of-contents)
 
 We can use shorthand to assign properties returned from objects to local variables with the same name
 
