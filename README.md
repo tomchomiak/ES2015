@@ -593,3 +593,5 @@ Any JavaScript that needs to be evaluated in the template string is wrapped in a
 ## Multi-line Strings
 [&#9757; Back to top](#table-of-contents)
 
+Template strings offer a new and better way to write multi-line strings
+
