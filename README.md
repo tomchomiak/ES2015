@@ -14,10 +14,12 @@ A ES2015 cheatsheet for the rest of us
   - [Spread Operator](#spread-operator)
   - [Arrow Functions](#arrow-functions)
 
-3. Objects and Strings
+3. Objects
   - [Object Initializer](#object-initializer-shorthand)
   - [Object Destructuring](#object-destructuring)
   - [Object Method Initialzer](#object-method-initializer)
+  
+4. Strings
   - [Template Strings](#template-strings)
   - [Multi-line Strings](#multi-line-strings)
 
