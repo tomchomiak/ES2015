@@ -20,6 +20,8 @@ A ES2015 cheatsheet for the rest of us
 
 
 ## Let
+[&#9757; Back to top](#table-of-contents)
+
 `Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`.
 
 ```javascript
@@ -138,6 +140,7 @@ Executing `sayHi(['Tom', 'Gaby', 'Audrey'])` will now print out the following wi
 
 
 ## Const
+[&#9757; Back to top](#table-of-contents)
 
 `const` keyword creates *read-only* named constants. 
 
@@ -181,7 +184,8 @@ function someFunc (tries){
 }
 ```
 
-## Default Parameters 
+## Default Parameters
+[&#9757; Back to top](#table-of-contents)
 
 Take the following function
 
@@ -230,6 +234,7 @@ showUsers();
 will return 0 instead of a type error as userNames will default to an empty array if it is not passed.
 
 ## Options Object and Named Parameters
+[&#9757; Back to top](#table-of-contents)
 
 The options object is a widely used pattern that allows user-defined settings to be passed to a function in the form of properties on an object.
 
@@ -273,6 +278,7 @@ doSomething("Something cool")
 
 
 ## Rest Parameters 
+[&#9757; Back to top](#table-of-contents)
 
 The new rest parameter syntax allows us to represent an indefinite number of aruguments as an explicit Array argument. The 3 dots infront of the `names` parameter are part of the new syntax and will push all `names` arguments passed into this function into an Array.
 
@@ -303,6 +309,8 @@ would return
 ```
 
 ## Spread Operator
+[&#9757; Back to top](#table-of-contents)
+
 You can also use dot notation to split an array into individual arguments
 
 ```javascript
@@ -317,6 +325,7 @@ The syntax for Rest Parameters and Spread Operators looks the same. However, `Re
 Same syntax, but different behaviour depending on wher the dot notation is used.
 
 ## Arrow Functions
+[&#9757; Back to top](#table-of-contents)
 
 Arrow functions can be used to preserve scope. Arrow functions have a lexical binding which means that they bind to the scope of where they are defined and not where they run.
 
@@ -437,6 +446,8 @@ tagComponent.render();
 ```
 
 ## Object Initializer Shorthand
+[&#9757; Back to top](#table-of-contents)
+
 With object initializers, we can remove duplicate variable names from object properties when those properties have the same name as the variables being assigned to them. 
 
 In otherwords, this 
