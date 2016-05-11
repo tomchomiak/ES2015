@@ -15,6 +15,8 @@ A ES2015 cheatsheet for the rest of us
 3. Objects and Strings
   - [Object Initializer](#object-initializer-shorthand)
   - [Object Destructuring](#object-destructuring)
+
+  
 ## Let
 `Let` variables are scoped to the nearest *block* and are not hoisted to the top of the function like regular variables declared with `var`.
 
@@ -498,4 +500,4 @@ console.log(last); // Returns Chomiak
 console.log(fullname); // Returns Tom Chomiak
 ```
 
-The object properties are assigned to local variables that have the same name as the object properties
+The object properties are assigned to local variables that must have the same name as the object properties
