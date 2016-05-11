@@ -478,6 +478,13 @@ console.log(user.gender); // returns male
 
 ## Object Destructuring
 
-```javascript
+We can use shorthand to assign properties returned from objects to local variables with the same name
 
+```javascript
+let user = assembleFullname("Tom", "Chomiak");
+
+let first = user.first;
+let last  = user.last;
+let fullname = user.fullname;
 ```
+
