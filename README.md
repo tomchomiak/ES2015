@@ -488,3 +488,14 @@ let last  = user.last;
 let fullname = user.fullname;
 ```
 
+here is the shorthand for this
+
+```javascript
+let {first, last, fullname} = assembleFullname("Tom", "Chomiak");
+
+console.log(first); // Returns Tom
+console.log(last); // Returns Chomiak
+console.log(fullname); // Returns Tom Chomiak
+```
+
+The object properties are assigned to local variables that have the same name as the object properties
