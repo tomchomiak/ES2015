@@ -556,3 +556,32 @@ return {
 [&#9757; Back to top](#table-of-contents)
 
 Template strings are string literals allowing for embedded expressions and better string interpolation
+
+Take the following function
+
+```javascript
+function assembleFullname (first, last){
+	let fullname = first + last;
+
+	return {
+		first, 
+		last, 
+		fullname
+	}
+}
+```
+
+Instead of combining strings for the fullname using a plus sign, we can use template strings (using back ticks and not single quotes).
+
+```javascript
+function assembleFullname (first, last){
+	
+	let fullname = `${first} ${last}`;
+
+	return {
+		first, 
+		last, 
+		fullname
+	}
+}
+```
