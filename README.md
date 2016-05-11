@@ -518,3 +518,8 @@ The object properties are assigned to local variables that must have the same na
 
 Not all properties have to be destructured at the same time. We can explicitly select the ones we want.
 
+```javascript
+let {fullname} = assembleFullname("Tom", "Chomiak");
+
+console.log(fullname); // Returns Tom Chomiak
+```
