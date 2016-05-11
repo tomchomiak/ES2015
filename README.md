@@ -478,7 +478,7 @@ console.log(user.age); // returns 31
 console.log(user.gender); // returns male
 ```
 
-## Object Destructuring — [Back to top](#ES2015-cheatsheet)
+## Object Destructuring — [Back to top](#es2015-cheatsheet)
 
 We can use shorthand to assign properties returned from objects to local variables with the same name
 
