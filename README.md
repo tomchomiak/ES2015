@@ -555,3 +555,4 @@ return {
 ## Template Strings
 [&#9757; Back to top](#table-of-contents)
 
+Template strings are string literals allowing for embedded expressions and better string interpolation
