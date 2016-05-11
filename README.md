@@ -1,3 +1,4 @@
+# &#9876;
 # ES2015 cheatsheet
 
 A ES2015 cheatsheet for the rest of us
