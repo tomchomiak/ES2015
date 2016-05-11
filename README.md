@@ -528,3 +528,25 @@ console.log(fullname); // Returns Tom Chomiak
 ## object-method-initializer
 [&#9757; Back to top](#table-of-contents)
 
+There is a shorthand for declaring methods in object. Take the following example
+
+```javascript
+return {
+	first: first,
+	last: last,
+	combine: function (first, last){
+		return first + " " + last;
+	}
+}
+```
+the shorthand for declaring methods can be written like so
+
+```javascript
+return {
+	first,
+	last,
+	combine(first, last){
+		return first + " " + last;
+	}
+}
+```
